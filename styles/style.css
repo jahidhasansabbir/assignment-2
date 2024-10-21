@@ -12,12 +12,7 @@
     font-weight: 400;
     font-style: normal;
 }
-.miama-normal{
-    font-family: 'Miama', sans-serif;  
-    font-weight: 400px; 
-    color: white;
-    font-size: 4.75rem;                                        
-}
+
 
 /* Theme section */
 :root{
@@ -45,6 +40,17 @@
   }
   .title{
 
+  }
+  .description{
+    font-family: 1rem;
+    color: var(--primary-text-color);
+  }
+  .btn-primary{
+    padding: 1rem  2.5rem;
+    background-color: var(--primary-btn-color);
+    color: var(--primary-btn-text-color);
+    border-radius: 2.625rem;
+    border: none;
   }
   /* Header section style */
 header{
@@ -92,7 +98,100 @@ header{
     display: none;
   }
 
+  /* Banner Styles */
+  .banner-container{
+    margin-top: 6rem;
+    display: flex;
+    gap: 5.5rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .banner-text p{
+    margin-bottom: 1.75rem;
+  }
+  .banner-img{
+    background: url('../images/Images\ 2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 36.25rem;
+    position: relative;
+  }
+  .banner-title{
+    color: white;
+    font-size: 4.625rem;
+    font-weight: 900;
+    line-height: 120%;
+    margin-bottom: 1.75rem;
+
+  }
+  .miama-normal{
+    font-family: 'Miama', sans-serif;  
+    font-weight: 400px; 
+    color: white;
+    font-size: 6rem;   
+    line-height: 120%;                                     
+}
+.btn-transparent{
+    background-color: black;
+    border: 1px solid white;
+    margin-left: .875rem;
+}
+.video{
+    width: 12.875rem;
+    height: 6rem;
+    border-radius: .55rem;
+    border: .8px solid rgba(255, 255, 255, 0.10);
+    background: rgba(48, 48, 48, 0.54);
+    backdrop-filter: blur(7.560137748718262px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.video>div{
+    color: var(--primary-title-color);
+    height: 50%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: .38rem;
+
+}
+.play-icon{
+    width: 20%;
+}
+.play-icon img{
+    width: 100%;
+}
+.text h3{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.text p{
+    font-size: 1rem ;
+    color: var(--primary-text-color);
+}
+.workout h2{
+    font-size: 2.5rem;
+}
+.workout p{
+    font-size: .8rem;
+}
+.tutorial{
+    position: absolute;
+    top: 27%;
+    right: -21%;
+}
+.free-workout{
+    position: absolute;
+    bottom: 7%;
+    left: -20%;
+}
   @media screen and (max-width: 576px){
+    .navbar-container{
+        width: 90%;
+    }
     .nav-items{
         display: none;
     }
@@ -101,5 +200,23 @@ header{
         color: var(--primary-btn-text-color);
         width: 1.5rem;
         height: 1.5rem;
+    }
+    .banner-container{
+        flex-direction: column;
+        width: 90%;
+        margin-top: 2rem;
+    }
+    .banner-title{
+        font-size: 2.25rem;
+    }
+    .tutorial{
+        position: absolute;
+        top: -1%;
+        right: -3%;
+    }
+    .free-workout{
+        position: absolute;
+        bottom: 14%;
+        left: 0%;
     }
   }
