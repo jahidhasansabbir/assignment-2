@@ -299,6 +299,9 @@ header{
   border-collapse: collapse;
   margin-top: 38px;
 }
+.input-container{
+  width: 100%;
+}
 input{
   padding: 12px 20px 12px 40px;
   border: none;
@@ -319,7 +322,7 @@ select{
   margin-bottom: .5rem;
 }
 .input{
-  width: 80%;
+  width: 100%;
   display: flex;
   gap: .5rem;
 }
@@ -356,9 +359,9 @@ select{
 }
 .members>div{
   position: absolute;
-  bottom: 15px;
-  left: 15px;
-  padding: 15px;
+  bottom: 10px;
+  left: 10px;
+  padding: 10px;
 }
 .member-name{
   font-size: 1.25rem;
@@ -510,6 +513,9 @@ hr{
       width: 70%;
       flex-direction: column;
       gap: 2rem;
+    }
+    select{
+      width: 115%;
     }
     .title{
       font-size: 2rem;
