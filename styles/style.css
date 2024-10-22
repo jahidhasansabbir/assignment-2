@@ -233,6 +233,26 @@ header{
   color: var(--primary-title-color);
   margin-bottom: .375rem;
 }
+/* Run an Extra Mile section's style */
+.extra-mile-container{
+  padding: 1.875rem 2rem ;
+  background-color: rgba(155, 151, 151, 0.144);
+  border-radius: 1.125rem;
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+}
+.extra-mile-text p{
+  text-align: left;
+  margin-top: 14px;
+  margin-bottom: 34px;
+}
+.extra-mile-img img{
+  width: 100%;
+  border-radius: 1.125rem;
+
+}
+/* Small device styles*/
   @media screen and (max-width: 576px){
     .navbar-container{
         width: 90%;
@@ -267,14 +287,27 @@ header{
     .btn-container{
       display: flex;
       justify-content: center;
-      border: 2px solid white
     }
     .habits-card-container{
       flex-direction: column;
       width: 90%;
+      margin-left: auto;
+      margin-right: auto;
     }
     .habits-card{
       margin-left: 5%;
-      margin-right:5%;
+      margin-right: 5%;
+    }
+    .extra-mile-container{
+      margin: 5% auto;
+      width: 70%;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .title{
+      font-size: 2rem;
+    }
+    .btn-run{
+      width: 100%;
     }
   }
